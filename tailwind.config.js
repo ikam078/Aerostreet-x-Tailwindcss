@@ -8,7 +8,7 @@ module.exports = {
       '-25': "-25deg"
     },
     margin: {
-      '26': '6.5rem'
+      '26': '6.5rem0'
     }
   },
   },
