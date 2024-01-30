@@ -2443,6 +2443,10 @@ input:checked + .toggle-bg {
     display: flex;
   }
 
+  .sm\:h-64 {
+    height: 16rem;
+  }
+
   .sm\:border-b-0 {
     border-bottom-width: 0px;
   }
@@ -2463,6 +2467,22 @@ input:checked + .toggle-bg {
 
   .md\:h-96 {
     height: 24rem;
+  }
+
+  .md\:h-72 {
+    height: 18rem;
+  }
+
+  .md\:w-60 {
+    width: 15rem;
+  }
+
+  .md\:w-full {
+    width: 100%;
+  }
+
+  .md\:justify-center {
+    justify-content: center;
   }
 
   .md\:space-x-0 > :not([hidden]) ~ :not([hidden]) {
