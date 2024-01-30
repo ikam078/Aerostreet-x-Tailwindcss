@@ -1121,6 +1121,14 @@ input:checked + .toggle-bg {
   top: 0.625rem;
 }
 
+.left-1\/2 {
+  left: 50%;
+}
+
+.top-1\/2 {
+  top: 50%;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -1220,6 +1228,10 @@ input:checked + .toggle-bg {
   margin-bottom: 2rem;
 }
 
+.me-4 {
+  margin-inline-end: 1rem;
+}
+
 .block {
   display: block;
 }
@@ -1308,6 +1320,18 @@ input:checked + .toggle-bg {
   height: 18rem;
 }
 
+.h-56 {
+  height: 14rem;
+}
+
+.h-auto {
+  height: auto;
+}
+
+.h-full {
+  height: 100%;
+}
+
 .min-h-screen {
   min-height: 100vh;
 }
@@ -1372,6 +1396,10 @@ input:checked + .toggle-bg {
   max-width: 72rem;
 }
 
+.max-w-full {
+  max-width: 100%;
+}
+
 .flex-1 {
   flex: 1 1 0%;
 }
@@ -1415,6 +1443,11 @@ input:checked + .toggle-bg {
 
 .translate-y-full {
   --tw-translate-y: 100%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.-translate-x-1\/2 {
+  --tw-translate-x: -50%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -1859,6 +1892,10 @@ input:checked + .toggle-bg {
   padding-left: 1.25rem;
 }
 
+.pt-4 {
+  padding-top: 1rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -2058,8 +2095,16 @@ input:checked + .toggle-bg {
   transition-duration: 75ms;
 }
 
+.duration-700 {
+  transition-duration: 700ms;
+}
+
 .ease-out {
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}
+
+.ease-in-out {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hover\:border-gray-300:hover {
@@ -2199,6 +2244,11 @@ input:checked + .toggle-bg {
 }
 
 .group:hover .group-hover\:text-gray-900 {
+  --tw-text-opacity: 1;
+  color: rgb(17 24 39 / var(--tw-text-opacity));
+}
+
+.group:focus .group-focus\:text-gray-900 {
   --tw-text-opacity: 1;
   color: rgb(17 24 39 / var(--tw-text-opacity));
 }
@@ -2378,6 +2428,11 @@ input:checked + .toggle-bg {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+:is(.dark .group:focus .dark\:group-focus\:text-white) {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 :is(.dark .peer:checked ~ .dark\:peer-checked\:text-blue-500) {
   --tw-text-opacity: 1;
   color: rgb(63 131 248 / var(--tw-text-opacity));
@@ -2404,6 +2459,10 @@ input:checked + .toggle-bg {
 
   .md\:me-0 {
     margin-inline-end: 0px;
+  }
+
+  .md\:h-96 {
+    height: 24rem;
   }
 
   .md\:space-x-0 > :not([hidden]) ~ :not([hidden]) {
