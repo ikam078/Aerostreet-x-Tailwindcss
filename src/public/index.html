@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tailwind 2</title>
+    <title>Aerostreet</title>
     <link rel="stylesheet" href="/src/public/style.css">
 
 </head>
@@ -176,9 +176,9 @@
 
     <!-- product -->
     <section id="product" class="mt-20">
-        <div class="min-h-screen flex items-center justify-center antialiased">
-            <div class="flex bg-gradient-to-tr from-blue-100 to-blue-200 rounded-xl shadow-lg">
-                <div class="bg-white rounded-xl shadow-md h-96 flex flex-col relative w-72 flex-shrink-0">
+        <div class="flex">
+            <div class="min-h-screen flex flex-wrap antialiased pl-4">
+                <div class="bg-white rounded-xl shadow-md h-80 flex flex-col relative w-72 flex-shrink-0">
                     <img src="/images/Untitled design (4).png" alt=""
                         class="absolute w-full top-0 transform -translate-y-1/2 -rotate-25">
                     <div class="mt-20 px-6 text-gray-700 flex-1">
@@ -186,62 +186,201 @@
 
                         <div class="my-2">
                             <p class="mb-1 ">Size</p>
-                            <div class="form-group flex flex-wrap" is="dmx-radio-group" id="group1">
-                                <div class="col-sm-5 p-1">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" value="38" id="inp_number1"
-                                            name="number" required>
-                                        <label class="form-check-label" for="inp_number1">38</label>
-                                    </div>
-                                </div>
-                                <div class="col-sm-5 p-1">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" value="39" id="inp_number2"
-                                            name="number">
-                                        <label class="form-check-label" for="inp_number2">39</label>
-                                    </div>
-                                </div>
-                                <div class="col-sm-5 p-1">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" value="40" id="inp_number3"
-                                            name="number">
-                                        <label class="form-check-label" for="inp_number3">40</label>
-                                    </div>
-                                </div>
-                                <div class="col-sm-5 p-1">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" value="41" id="inp_number4"
-                                            name="number">
-                                        <label class="form-check-label" for="inp_number4">41</label>
-                                    </div>
-                                </div>
-                                <div class="col-sm-5 p-1">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" value="42" id="inp_number5"
-                                            name="number">
-                                        <label class="form-check-label" for="inp_number5">42</label>
-                                    </div>
-                                </div>
-                                <div class="col-sm-5 p-1">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" value="43" id="inp_number6"
-                                            name="number" required>
-                                        <label class="form-check-label" for="inp_number6">43</label>
-                                    </div>
-                                </div>
+                            <div class="flex space-x-2 mx-auto pt-2">
+                                <input type="radio" id="option38" name="number" class="hidden">
+                                <label for="option38"
+                                    class="cursor-pointer flex items-center justify-center h-8 w-8 border border-gray-300 rounded-md hover:bg-blue-500 hover:text-white">
+                                    38
+                                </label>
+
+                                <input type="radio" id="option39" name="number" class="hidden">
+                                <label for="option39"
+                                    class="cursor-pointer flex items-center justify-center h-8 w-8 border border-gray-300 rounded-md hover:bg-blue-500 hover:text-white">
+                                    39
+                                </label>
+
+                                <input type="radio" id="option40" name="number" class="hidden">
+                                <label for="option40"
+                                    class="cursor-pointer flex items-center justify-center h-8 w-8 border border-gray-300 rounded-md hover:bg-blue-500 hover:text-white">
+                                    40
+                                </label>
+
+                                <input type="radio" id="option41" name="number" class="hidden">
+                                <label for="option41"
+                                    class="cursor-pointer flex items-center justify-center h-8 w-8 border border-gray-300 rounded-md hover:bg-blue-500 hover:text-white">
+                                    41
+                                </label>
+
+                                <input type="radio" id="option42" name="number" class="hidden">
+                                <label for="option42"
+                                    class="cursor-pointer flex items-center justify-center h-8 w-8 border border-gray-300 rounded-md hover:bg-blue-500 hover:text-white">
+                                    42
+                                </label>
                             </div>
                         </div>
-                        
                     </div>
-                    <div class="px-6 flex items-center justify-between text-gray-700 mb-3">
+                    <div class="px-6 flex items-center justify-between text-gray-700 mb-8">
                         <p class="font-extrabold text-2xl transform scale-110 leading-none">RP.159.900</p>
-                        <button class="border-2 text-gray-700 border-gray-400 px-2 roundeed-lg leading-none p-1.5">Add
+                        <button
+                            class="border rounded text-gray-700 border-gray-400 px-2 hover:bg-blue-600 hover:text-white roundeed-lg leading-none p-1.5">Add
+                            to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="min-h-screen flex flex-wrap antialiased pl-4">
+                <div class="bg-white rounded-xl shadow-md h-80 flex flex-col relative w-72 flex-shrink-0">
+                    <img src="/images/Untitled design (4).png" alt=""
+                        class="absolute w-full top-0 transform -translate-y-1/2 -rotate-25">
+                    <div class="mt-20 px-6 text-gray-700 flex-1">
+                        <h2 class="text-black font-extrabold text-2xl tracking-wide leading-none">Aerostreet Hoops</h2>
+
+                        <div class="my-2">
+                            <p class="mb-1 ">Size</p>
+                            <div class="flex space-x-2 mx-auto pt-2">
+                                <input type="radio" id="option38" name="number" class="hidden">
+                                <label for="option38"
+                                    class="cursor-pointer flex items-center justify-center h-8 w-8 border border-gray-300 rounded-md hover:bg-blue-500 hover:text-white">
+                                    38
+                                </label>
+
+                                <input type="radio" id="option39" name="number" class="hidden">
+                                <label for="option39"
+                                    class="cursor-pointer flex items-center justify-center h-8 w-8 border border-gray-300 rounded-md hover:bg-blue-500 hover:text-white">
+                                    39
+                                </label>
+
+                                <input type="radio" id="option40" name="number" class="hidden">
+                                <label for="option40"
+                                    class="cursor-pointer flex items-center justify-center h-8 w-8 border border-gray-300 rounded-md hover:bg-blue-500 hover:text-white">
+                                    40
+                                </label>
+
+                                <input type="radio" id="option41" name="number" class="hidden">
+                                <label for="option41"
+                                    class="cursor-pointer flex items-center justify-center h-8 w-8 border border-gray-300 rounded-md hover:bg-blue-500 hover:text-white">
+                                    41
+                                </label>
+
+                                <input type="radio" id="option42" name="number" class="hidden">
+                                <label for="option42"
+                                    class="cursor-pointer flex items-center justify-center h-8 w-8 border border-gray-300 rounded-md hover:bg-blue-500 hover:text-white">
+                                    42
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-6 flex items-center justify-between text-gray-700 mb-8">
+                        <p class="font-extrabold text-2xl transform scale-110 leading-none">RP.159.900</p>
+                        <button
+                            class="border rounded text-gray-700 border-gray-400 px-2 hover:bg-blue-600 hover:text-white roundeed-lg leading-none p-1.5">Add
+                            to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="min-h-screen flex flex-wrap antialiased pl-4">
+                <div class="bg-white rounded-xl shadow-md h-80 flex flex-col relative w-72 flex-shrink-0">
+                    <img src="/images/Untitled design (4).png" alt=""
+                        class="absolute w-full top-0 transform -translate-y-1/2 -rotate-25">
+                    <div class="mt-20 px-6 text-gray-700 flex-1">
+                        <h2 class="text-black font-extrabold text-2xl tracking-wide leading-none">Aerostreet Hoops</h2>
+
+                        <div class="my-2">
+                            <p class="mb-1 ">Size</p>
+                            <div class="flex space-x-2 mx-auto pt-2">
+                                <input type="radio" id="option38" name="number" class="hidden">
+                                <label for="option38"
+                                    class="cursor-pointer flex items-center justify-center h-8 w-8 border border-gray-300 rounded-md hover:bg-blue-500 hover:text-white">
+                                    38
+                                </label>
+
+                                <input type="radio" id="option39" name="number" class="hidden">
+                                <label for="option39"
+                                    class="cursor-pointer flex items-center justify-center h-8 w-8 border border-gray-300 rounded-md hover:bg-blue-500 hover:text-white">
+                                    39
+                                </label>
+
+                                <input type="radio" id="option40" name="number" class="hidden">
+                                <label for="option40"
+                                    class="cursor-pointer flex items-center justify-center h-8 w-8 border border-gray-300 rounded-md hover:bg-blue-500 hover:text-white">
+                                    40
+                                </label>
+
+                                <input type="radio" id="option41" name="number" class="hidden">
+                                <label for="option41"
+                                    class="cursor-pointer flex items-center justify-center h-8 w-8 border border-gray-300 rounded-md hover:bg-blue-500 hover:text-white">
+                                    41
+                                </label>
+
+                                <input type="radio" id="option42" name="number" class="hidden">
+                                <label for="option42"
+                                    class="cursor-pointer flex items-center justify-center h-8 w-8 border border-gray-300 rounded-md hover:bg-blue-500 hover:text-white">
+                                    42
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-6 flex items-center justify-between text-gray-700 mb-8">
+                        <p class="font-extrabold text-2xl transform scale-110 leading-none">RP.159.900</p>
+                        <button
+                            class="border rounded text-gray-700 border-gray-400 px-2 hover:bg-blue-600 hover:text-white roundeed-lg leading-none p-1.5">Add
+                            to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="min-h-screen flex flex-wrap antialiased pl-4">
+                <div class="bg-white rounded-xl shadow-md h-80 flex flex-col relative w-72 flex-shrink-0">
+                    <img src="/images/Untitled design (4).png" alt=""
+                        class="absolute w-full top-0 transform -translate-y-1/2 -rotate-25">
+                    <div class="mt-20 px-6 text-gray-700 flex-1">
+                        <h2 class="text-black font-extrabold text-2xl tracking-wide leading-none">Aerostreet Hoops</h2>
+
+                        <div class="my-2">
+                            <p class="mb-1 ">Size</p>
+                            <div class="flex space-x-2 mx-auto pt-2">
+                                <input type="radio" id="option38" name="number" class="hidden">
+                                <label for="option38"
+                                    class="cursor-pointer flex items-center justify-center h-8 w-8 border border-gray-300 rounded-md hover:bg-blue-500 hover:text-white">
+                                    38
+                                </label>
+
+                                <input type="radio" id="option39" name="number" class="hidden">
+                                <label for="option39"
+                                    class="cursor-pointer flex items-center justify-center h-8 w-8 border border-gray-300 rounded-md hover:bg-blue-500 hover:text-white">
+                                    39
+                                </label>
+
+                                <input type="radio" id="option40" name="number" class="hidden">
+                                <label for="option40"
+                                    class="cursor-pointer flex items-center justify-center h-8 w-8 border border-gray-300 rounded-md hover:bg-blue-500 hover:text-white">
+                                    40
+                                </label>
+
+                                <input type="radio" id="option41" name="number" class="hidden">
+                                <label for="option41"
+                                    class="cursor-pointer flex items-center justify-center h-8 w-8 border border-gray-300 rounded-md hover:bg-blue-500 hover:text-white">
+                                    41
+                                </label>
+
+                                <input type="radio" id="option42" name="number" class="hidden">
+                                <label for="option42"
+                                    class="cursor-pointer flex items-center justify-center h-8 w-8 border border-gray-300 rounded-md hover:bg-blue-500 hover:text-white">
+                                    42
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-6 flex items-center justify-between text-gray-700 mb-8">
+                        <p class="font-extrabold text-2xl transform scale-110 leading-none">RP.159.900</p>
+                        <button
+                            class="border rounded text-gray-700 border-gray-400 px-2 hover:bg-blue-600 hover:text-white roundeed-lg leading-none p-1.5">Add
                             to cart</button>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <section></section>
 
 
 
