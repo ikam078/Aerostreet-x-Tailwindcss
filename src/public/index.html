@@ -29,6 +29,8 @@
             <span class="sr-only">Close menu</span>
         </button>
 
+
+
         <!-- menu -->
         <div class="py-4 overflow-y-auto">
             <ul class="space-y-2 font-medium">
@@ -94,125 +96,31 @@
     </div>
 
     <!-- logo & isi aero -->
-    <nav class="bg-gray-100 border-gray-200 dark:bg-gray-900 shadow-xl rounded-2xl m-5">
-        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-2">
-            <button
-                class="w-20 md:w-24 lg:w-28 text-black focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
-                type="button" data-drawer-target="drawer-navigation" data-drawer-show="drawer-navigation"
-                aria-controls="drawer-navigation">
-                <img src="/images/aerologonew.png" alt="">
-            </button>
-            <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+    <nav class="p-2">
+        <div class="bg-gray-200 rounded-lg shadow-lg flex flex-wrap items-center justify-between p-4">
+
+            <!-- nav -->
+            <a href="#home" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <img src="/images/aerologonew.png" class="w-12" alt="Flowbite Logo" />
             </a>
-            <!-- menu -->
-            <div class="flex items-center md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse px-10">
-                <button type="button"
-                    class="flex text-sm bg-gray-800 rounded-full md:me-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600"
-                    id="user-menu-button" aria-expanded="false" data-dropdown-toggle="user-dropdown"
-                    data-dropdown-placement="bottom">
-                    <span class="sr-only">Open user menu</span>
-                    <svg class="w-8 md:w-12 lg:w-16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                        style="fill: white;">
-                        <path
-                            d="M12 2C6.579 2 2 6.579 2 12s4.579 10 10 10 10-4.579 10-10S17.421 2 12 2zm0 5c1.727 0 3 1.272 3 3s-1.273 3-3 3c-1.726 0-3-1.272-3-3s1.274-3 3-3zm-5.106 9.772c.897-1.32 2.393-2.2 4.106-2.2h2c1.714 0 3.209.88 4.106 2.2C15.828 18.14 14.015 19 12 19s-3.828-.86-5.106-2.228z">
-                        </path>
-                    </svg>
-                </button>
-                <!-- Dropdown menu -->
-                <div class="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700 dark:divide-gray-600"
-                    id="user-dropdown">
-                    <div class="px-4 py-3">
-                        <span class="block text-sm text-gray-900 dark:text-white">username</span>
-                        <span class="block text-sm  text-gray-500 truncate dark:text-gray-400">useremail.com</span>
-                    </div>
-                    <ul class="py-2" aria-labelledby="user-menu-button">
-                        <li>
-                            <!-- sign in -->
-                            <a data-modal-target="sign-in" data-modal-toggle="sign-in"
-                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
-                                type="button">
-                                sign in
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#"
-                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Sign
-                                out</a>
-                        </li>
-                    </ul>
-                </div>
-                <!--isi sign in-->
-                <div id="sign-in" tabindex="-1" aria-hidden="true"
-                    class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
-                    <div class="relative w-72 md:w-80">
-                        <!-- Modal content -->
-                        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-                            <!-- Modal header -->
-                            <div
-                                class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
-                                <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
-                                    Sign in to our platform
-                                </h3>
-                                <button type="button"
-                                    class="end-2.5 fill-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
-                                    data-modal-hide="sign-in">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                        <path
-                                            d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z">
-                                        </path>
-                                    </svg>
-                                    <span class="sr-only">Close modal</span>
-                                </button>
-                            </div>
-                            <!-- Modal body -->
-                            <div class="p-4 md:p-5">
-                                <form class="space-y-4" action="#">
-                                    <div>
-                                        <label for="email"
-                                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your
-                                            email</label>
-                                        <input type="email" name="email" id="email"
-                                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
-                                            placeholder="name@company.com" required>
-                                    </div>
-                                    <div>
-                                        <label for="password"
-                                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your
-                                            password</label>
-                                        <input type="password" name="password" id="password" placeholder="••••••••"
-                                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
-                                            required>
-                                    </div>
-                                    <div class="flex justify-between">
-                                        <div class="flex items-start">
-                                            <div class="flex items-center h-5">
-                                                <input id="remember" type="checkbox" value=""
-                                                    class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-600 dark:border-gray-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800"
-                                                    required>
-                                            </div>
-                                            <label for="remember"
-                                                class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Remember
-                                                me</label>
-                                        </div>
-                                        <a href="#"
-                                            class="text-sm text-blue-700 hover:underline dark:text-blue-500">Lost
-                                            Password?</a>
-                                    </div>
-                                    <button type="submit"
-                                        class="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Login
-                                        to your account</button>
-                                    <div class="text-sm font-medium text-gray-500 dark:text-gray-300">
-                                        Not registered? <a href="#"
-                                            class="text-blue-700 hover:underline dark:text-blue-500">Create account</a>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="" id="">
+                <ul class="flex ">
+                    <a href="#">
+                        <svg class="w-5 fill-gray-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path
+                                d="M21.822 7.431A1 1 0 0 0 21 7H7.333L6.179 4.23A1.994 1.994 0 0 0 4.333 3H2v2h2.333l4.744 11.385A1 1 0 0 0 10 17h8c.417 0 .79-.259.937-.648l3-8a1 1 0 0 0-.115-.921z">
+                            </path>
+                            <circle cx="10.5" cy="19.5" r="1.5"></circle>
+                            <circle cx="17.5" cy="19.5" r="1.5"></circle>
+                        </svg>
+                    </a>
+                    </li>
+                </ul>
+                
             </div>
         </div>
     </nav>
+
 
     <!-- home -->
     <section id="home">
