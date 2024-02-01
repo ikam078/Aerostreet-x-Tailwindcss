@@ -1687,6 +1687,14 @@ input:checked + .toggle-bg {
   fill: #9CA3AF;
 }
 
+.fill-gray-700 {
+  fill: #374151;
+}
+
+.fill-gray-500 {
+  fill: #6B7280;
+}
+
 .p-1 {
   padding: 0.25rem;
 }
@@ -1759,6 +1767,11 @@ input:checked + .toggle-bg {
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+.px-1 {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
 }
 
 .pl-5 {
@@ -1978,6 +1991,18 @@ input:checked + .toggle-bg {
 .hover\:bg-white:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.hover\:fill-gray-900:hover {
+  fill: #111827;
+}
+
+.hover\:fill-black:hover {
+  fill: #000000;
+}
+
+.hover\:fill-gray-800:hover {
+  fill: #1F2937;
 }
 
 .hover\:text-blue-600:hover {
