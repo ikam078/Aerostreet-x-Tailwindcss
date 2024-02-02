@@ -1352,6 +1352,18 @@ input:checked + .toggle-bg {
   width: 0.875rem;
 }
 
+.w-2 {
+  width: 0.5rem;
+}
+
+.w-10 {
+  width: 2.5rem;
+}
+
+.w-24 {
+  width: 6rem;
+}
+
 .max-w-full {
   max-width: 100%;
 }
@@ -1803,6 +1815,21 @@ input:checked + .toggle-bg {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .pl-5 {
@@ -2333,8 +2360,24 @@ input:checked + .toggle-bg {
     height: 24rem;
   }
 
+  .md\:w-8 {
+    width: 2rem;
+  }
+
+  .md\:w-9 {
+    width: 2.25rem;
+  }
+
+  .md\:w-14 {
+    width: 3.5rem;
+  }
+
   .md\:items-center {
     align-items: center;
+  }
+
+  .md\:justify-end {
+    justify-content: flex-end;
   }
 
   .md\:justify-between {
