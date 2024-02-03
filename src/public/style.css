@@ -2185,6 +2185,14 @@ input:checked + .toggle-bg {
     width: 2.25rem;
   }
 
+  .md\:w-5 {
+    width: 1.25rem;
+  }
+
+  .md\:w-4 {
+    width: 1rem;
+  }
+
   .md\:items-center {
     align-items: center;
   }
