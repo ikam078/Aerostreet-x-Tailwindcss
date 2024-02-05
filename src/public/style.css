@@ -1688,6 +1688,10 @@ input:checked + .toggle-bg {
   fill: #6B7280;
 }
 
+.fill-white {
+  fill: #ffffff;
+}
+
 .p-0 {
   padding: 0px;
 }
@@ -2144,6 +2148,10 @@ input:checked + .toggle-bg {
 
 :is(.dark .dark\:fill-white) {
   fill: #ffffff;
+}
+
+:is(.dark .dark\:fill-gray-50) {
+  fill: #F9FAFB;
 }
 
 :is(.dark .dark\:text-blue-500) {
