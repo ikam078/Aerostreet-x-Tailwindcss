@@ -9,7 +9,8 @@ module.exports = {
     },
     margin: {
       '26': '6.5rem0'
-    }
+    },
+    darkMode: 'media', 
   },
   },
   plugins: [
