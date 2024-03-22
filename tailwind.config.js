@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./src/**/*.{html,js}", "./node_modules/flowbite/**/*.js", "./Components/**/*.{js,ts,jsx,tsx}"
+    "./src/**/*.{html,js}", "./node_modules/flowbite/**/*.js"
   ],
   theme: {
     extend: {rotate:{
@@ -16,5 +16,9 @@ module.exports = {
   plugins: [
     require('flowbite/plugin'),
   ],
+  purge: [
+    "./src/components/**/*.{js,jsx}",
+    "./public/index.html",
+  ]
 }
 
